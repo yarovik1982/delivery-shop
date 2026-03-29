@@ -6,21 +6,29 @@
 } */
 
 @theme inline {
-  /* --color-background: var(--background);
-  --color-foreground: var(--foreground); */
   --font-sans: var(--font-rubik);
-  /* --font-mono: var(--font-geist-mono); */
+  --shadow-default: 2px 4px 8px 0 rgba(0,0,0,.1);
+  --color-primary: #70c05b;
+  --shadow-button-default: 4px 8px 16px 0 rgba(112,192,91, .3);
+  --shadow--button-default: var(--shadow-button-default);
+  --shadow-button-active:inset 0px 2px 0px 0 rgba(0,0,0, .2);
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
+  /* :root {
     --background: #0a0a0a;
     --foreground: #ededed;
-  }
+  } */
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: var(--font-sans);
+   background: #fbf8ec;
+  
+  font-family: var(--font-rubik), sans-serif;
+}
+.icon-text{
+  letter-spacing: 1px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color:#ff6634;
 }
