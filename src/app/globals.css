@@ -26,9 +26,6 @@ body {
   
   font-family: var(--font-rubik), sans-serif;
 }
-.icon-text{
-  letter-spacing: 1px;
-  font-weight: 700;
-  text-transform: uppercase;
-  color:#ff6634;
+.slide-title-responsive {
+  @apply text-lg md:text-2xl xl:text-5xl font-bold ;
 }

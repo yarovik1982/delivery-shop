@@ -1,5 +1,4 @@
 import Image from "next/image";
-// import iconSearch from "/../../public/header-icons/icon-search.svg";
 
 export const InputBlock = () => {
    return (
