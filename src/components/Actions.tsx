@@ -6,9 +6,9 @@ export const Actions = () => {
    const actionProducts = database.products.filter((product) => product.categories.includes("actions"));
    return (
       <section>
-         <div className="flex flex-col justify-center xl:max-w-[1208px] mx-auto">
+         <div className="flex flex-col justify-center xl:max-w-302 mx-auto">
             <div className="mb-4 md:mb-8 xl:mb-10 flex flex-row justify-between">
-               <h2 className="text-2xl xl:text-4xl text-left font-bold">Акции</h2>
+               <h2 className="text-2xl xl:text-4xl text-left font-bold text-[#414141]">Акции</h2>
                <button className="flex flex-row items-center gap-x-2 cursor-pointer">
                   <p className="text-base text-center text-[#606060] hover:text-[#bfbfbf]">Все акции</p>
                   <Image src="/header-icons/icon-arrow-right.svg" alt="To Actions" width={24} height={24} sizes="24px"/>

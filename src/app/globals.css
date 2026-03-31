@@ -12,6 +12,7 @@
   --shadow-button-default: 4px 8px 16px 0 rgba(112,192,91, .3);
   --shadow--button-default: var(--shadow-button-default);
   --shadow-button-active:inset 0px 2px 0px 0 rgba(0,0,0, .2);
+  --shadow-article: 4px 8px 16px 0 rgba(255,102,51,.2);
 }
 
 @media (prefers-color-scheme: dark) {
