@@ -9,7 +9,7 @@ const ProductCard = ({
 	img,
 	description,
 	basePrice,
-	discountPercent,
+	discountPercent = 0,
 	rating,
 	categories,
 }: ProductCardProps) => {
@@ -32,8 +32,8 @@ const ProductCard = ({
 		: calculatePriceByCard(finalPrice, cardDiscountPercent);
 
 	return (
-		<div className="flex flex-col justify-between w-40 rounded overflow-hidden bg-white md:w-56 xl:w-68 align-top p-0 hover:shadow-(--shadow-article) duration-300">
-			<div className="relative aspect-square w-40 h-40 md:w-56 xl:w-68">
+		<div className="flex flex-col justify-between w-40 rounded overflow-hidden bg-white md:w-56 xl:w-60 align-top p-0 hover:shadow-(--shadow-article) duration-300">
+			<div className="relative aspect-square w-40 h-40 md:w-56 xl:w-60">
 				<Image
 					src={img}
 					alt="Акция"
