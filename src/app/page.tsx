@@ -1,4 +1,5 @@
 import Actions from "@/components/Actions";
+import Articles from "@/components/Articles";
 import Maps from "@/components/Maps";
 import NewProducts from "@/components/NewProducts";
 import Purchases from "@/components/Purchases";
@@ -14,7 +15,8 @@ export default function Home() {
 				<NewProducts />
 				<Purchases />
 				<SpecialOffers />
-				<Maps/>
+				<Maps />
+				<Articles />
 			</div>
 		</main>
 	);

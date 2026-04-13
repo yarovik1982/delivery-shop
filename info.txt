@@ -1,0 +1,1 @@
+mongodb+srv://yarovik:<db_password>@cluster0.ppevns5.mongodb.net/?appName=Cluster0

@@ -1,6 +1,6 @@
-import Image from "next/image";
 import ProductCard from "./ProductCard";
 import database from "@/data/database.json";
+import ViewAllButton from "./ViewAllButton";
 
 export const Purchases = () => {
    const userPurchases = database.users[0].purchases.map((purchase) => {
@@ -18,18 +18,7 @@ export const Purchases = () => {
                <h2 className="text-2xl xl:text-4xl text-left font-bold text-[#414141]">
                   Покупали раньше
                </h2>
-               <button className="flex flex-row items-center gap-x-2 cursor-pointer">
-                  <p className="text-base text-center text-[#606060] hover:text-[#bfbfbf]">
-                     Все покупки
-                  </p>
-                  <Image
-                     src="/header-icons/icon-arrow-right.svg"
-                     alt="To news"
-                     width={24}
-                     height={24}
-                     sizes="24px"
-                  />
-               </button>
+               <ViewAllButton href="purchases" btnText="Все покупки" src="/header-icons/icon-arrow-right.svg" />
             </div>
             <ul className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6 xl:gap-10 justify-items-center">
                {userPurchases.slice(0, 4).map((item, index) => (
