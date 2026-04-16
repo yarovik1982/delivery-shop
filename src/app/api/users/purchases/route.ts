@@ -1,6 +1,5 @@
 import { getDb } from "../../../../../utils/api-routes";
 import { NextResponse } from "next/server";
-export const relevated = 3600;
 
 type Purchase = { id: number };
 type UserDoc = { purchases?: Purchase[] };

@@ -27,7 +27,7 @@ export const NewProducts = async () => {
 					<h2 className="text-2xl xl:text-4xl text-left font-bold text-[#414141]">
 						Новинки
 					</h2>
-					<ViewAllButton href="news" btnText="Все новинки" src="/header-icons/icon-arrow-right.svg"/>
+					<ViewAllButton href="new" btnText="Все новинки" src="/header-icons/icon-arrow-right.svg"/>
 				</div>
 				<ul className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6 xl:gap-10 justify-items-center">
 					{products.slice(0, 4).map((item, index) => (
